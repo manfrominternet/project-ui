@@ -36,7 +36,7 @@ const SignUp = () => {
       });
       console.log(response);
       if(response.status === 409) {
-        alert("user already exist, change email")
+        alert("user already exists, change email")
         setAccountExists(p => !p);
       }
       if (!response.ok) {

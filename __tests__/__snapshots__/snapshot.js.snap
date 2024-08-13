@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders homepage unchanged 1`] = `
+<div>
+  <a
+    class="backToMainPage"
+    href="/"
+  >
+    Back to Main Page
+  </a>
+  <div
+    class="form-wrapper"
+  >
+    <form
+      class=""
+      novalidate=""
+    >
+      <h2
+        style="margin-bottom: 15px; text-align: center;"
+      >
+        Register
+      </h2>
+      <div
+        class="container-fluid"
+      >
+        <div
+          class="row"
+        >
+          <div
+            class="col-sm-6"
+            style="margin-bottom: 10px;"
+          >
+            <div>
+              <div
+                class="form-floating"
+              >
+                <input
+                  class="form-control"
+                  id="firstnamLabel"
+                  placeholder="First name"
+                  required=""
+                  type="text"
+                  value=""
+                />
+                <label
+                  for="firstnamLabel"
+                >
+                  First name
+                </label>
+              </div>
+              <div
+                class="invalid-feedback"
+              >
+                Do not leave empty
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-6"
+            style="margin-bottom: 10px;"
+          >
+            <div
+              class="form-floating"
+            >
+              <input
+                class="form-control"
+                id="lastnameLabel"
+                placeholder="Last name"
+                required=""
+                type="text"
+                value=""
+              />
+              <label
+                for="lastnameLabel"
+              >
+                Last name
+              </label>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row"
+        >
+          <div
+            class="mb-3"
+          >
+            <div
+              class="form-floating"
+            >
+              <input
+                class="form-control"
+                id="emailLabel"
+                placeholder="Enter email"
+                required=""
+                type="email"
+                value=""
+              />
+              <label
+                for="emailLabel"
+              >
+                Enter email
+              </label>
+            </div>
+            <small
+              class="text-muted form-text"
+            >
+              We'll (hopefully) never share your email with anyone else.
+            </small>
+          </div>
+        </div>
+        <div
+          class="row"
+        >
+          <div
+            class="mb-3"
+          >
+            <div
+              class="form-floating"
+            >
+              <input
+                class="form-control"
+                id="passwordLabel"
+                placeholder="Password"
+                required=""
+                type="password"
+              />
+              <label
+                for="passwordLabel"
+              >
+                Password
+              </label>
+            </div>
+            <div
+              style="height: 24px; margin-top: 5px; background-color: rgb(189, 189, 189); border-radius: 5px;"
+            >
+              <div
+                style="height: 100%; border-radius: 5px; max-width: 100%;"
+              />
+            </div>
+            <small
+              class="text-muted form-text"
+            >
+              Just make it looong!
+            </small>
+          </div>
+        </div>
+        <div
+          class="row"
+        >
+          <div
+            class="mb-3"
+          >
+            <div
+              class="form-floating"
+            >
+              <input
+                class="form-control"
+                id="confirmationLabel"
+                placeholder="Repeat password"
+                required=""
+                type="password"
+              />
+              <label
+                for="confirmationLabel"
+              >
+                Confirmation
+              </label>
+            </div>
+            <p
+              style="color: red; display: none;"
+            >
+              Passwords are not the same
+            </p>
+          </div>
+        </div>
+        <button
+          class="sc-aYaIB cseazx"
+          disabled=""
+        >
+          Register
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;

@@ -14,8 +14,8 @@ export default async function handle_register(req: NextApiRequest, res: NextApiR
       const existUser = await collection.findOne({ email: email });
 
       if (existUser) {
-        // User already exists, send a 409 Conflict response
-        res.status(409).json({ message: 'User already exists' });
+        //User already exists, send a 409 Conflict response
+        return res.status(409).json({ message: 'User already exists' });
       } else {
         const result = await collection.insertOne({ firstName, lastName, email, password, movies });
         res.status(201).json({ message: 'User added successfully', data: result });
