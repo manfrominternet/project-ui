@@ -1,6 +1,6 @@
 Instruction
 
-To install the up please download the repository and start it with npm run dev
+To install the App please download the repository and start it with npm run dev
 
 To see tests run: npm test or npm test -- -u
 
