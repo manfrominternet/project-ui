@@ -1,6 +1,231 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders homepage unchanged 1`] = `
+exports[`Component Snapshot Tests renders homepage unchanged 1`] = `
+<div>
+  <main
+    class="main className"
+  >
+    <div
+      class="description"
+    >
+      <p>
+        Welcome to: for UI made movie library
+      </p>
+      <a
+        href="/register"
+      >
+        Proceed to register
+      </a>
+      <a
+        href="/login"
+      >
+        Proceed to login
+      </a>
+    </div>
+  </main>
+</div>
+`;
+
+exports[`Component Snapshot Tests renders login unchanged 1`] = `
+<div>
+  <a
+    class="backToMainPage"
+    href="/"
+  >
+    Back to Main Page
+  </a>
+  <div
+    class="form-wrapper"
+  >
+    <form
+      class=""
+      novalidate=""
+    >
+      <h2
+        style="margin-bottom: 15px; text-align: center;"
+      >
+        Log in
+      </h2>
+      <div
+        class="container-fluid"
+      >
+        <div
+          class="row"
+        >
+          <div
+            class="mb-3"
+          >
+            <div
+              class="form-floating"
+            >
+              <input
+                class="form-control"
+                id="emailLabel"
+                placeholder="Enter email"
+                required=""
+                type="email"
+                value=""
+              />
+              <label
+                for="emailLabel"
+              >
+                Enter email
+              </label>
+            </div>
+            <div
+              class="invalid-feedback"
+            >
+              Please provide a valid email.
+            </div>
+          </div>
+        </div>
+        <div
+          class="row"
+        >
+          <div
+            class="mb-3"
+          >
+            <div
+              class="form-floating"
+            >
+              <input
+                class="form-control"
+                id="passwordLabel"
+                placeholder="Password"
+                required=""
+                type="password"
+                value=""
+              />
+              <label
+                for="passwordLabel"
+              >
+                Password
+              </label>
+            </div>
+            <div
+              class="invalid-feedback"
+            >
+              Please provide a password.
+            </div>
+          </div>
+        </div>
+        <button
+          class="sc-gEvDqW EgXmv"
+          disabled=""
+        >
+          Log In
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`Component Snapshot Tests renders movies unchanged 1`] = `
+<div>
+  <div
+    class="top-bar"
+  >
+    <p
+      class="title"
+    >
+      Movies Page
+    </p>
+    <p
+      class="info"
+    >
+      Click below!
+    </p>
+    <a
+      class="logout-link"
+      href="/myLibrary"
+    >
+       Go to your library 
+    </a>
+    <a
+      class="logout-link"
+      href="/"
+    >
+      Logout
+    </a>
+  </div>
+  <a
+    class="banner"
+    href="/"
+  >
+    You're already logged out!
+  </a>
+</div>
+`;
+
+exports[`Component Snapshot Tests renders myLibrary unchanged 1`] = `
+<div>
+  <div
+    class="top-bar"
+  >
+    <p
+      class="text"
+    >
+       Your Library 
+    </p>
+    <a
+      class="logout-link"
+      href="/movies"
+    >
+      Go back to movies
+    </a>
+     
+    <a
+      class="logout-link"
+      href="/"
+    >
+      Logout
+    </a>
+  </div>
+  <div
+    class="my-library"
+  >
+    <div
+      class="my-movie center"
+    >
+      <p
+        class="p-over-list"
+      >
+        Here's the list of movies. That you have already bought:
+      </p>
+      <div />
+    </div>
+    <div
+      class="added center"
+    >
+      <p
+        class="p-over-list"
+      >
+        Here's the list of movies. That you have added to your wish list:
+      </p>
+      <div />
+    </div>
+    <div
+      class="summary center"
+    >
+      <p
+        class="p-over-list"
+      >
+        Here's the summary of your order:
+      </p>
+      <div>
+        <div
+          class="center"
+        >
+          You have ordered nothing.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Component Snapshot Tests renders register unchanged 1`] = `
 <div>
   <a
     class="backToMainPage"

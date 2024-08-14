@@ -11,7 +11,7 @@ function MyLibrary() {
     useEffect(() => {
       libraryFromLocalStorage = JSON.parse(localStorage.getItem("library") as string);
       libraryContext.library = libraryFromLocalStorage;
-      boughtsFromLocalStorage = JSON.parse(localStorage.getItem("userStorage") as string).boughtMovies;
+      boughtsFromLocalStorage = JSON.parse(localStorage.getItem("userStorage") as string)?.boughtMovies;
       allMovies.movies = boughtsFromLocalStorage;
     },[]) 
 
@@ -33,8 +33,7 @@ function MyLibrary() {
       }, []);
       
     const Boughts = useCallback(() => {
-      console.log(allMovies.movies, "movies_list");
-        const result = allMovies.movies.map((movie, index) => {
+        const result = allMovies?.movies?.map((movie, index) => {
           return (
             <div className="center">
                 {movie[1]}

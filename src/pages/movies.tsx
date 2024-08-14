@@ -35,8 +35,8 @@ function Movies() {
   
     useEffect(() => {
      const localStorageObject = JSON.parse(localStorage.getItem('userStorage') as string);
-        if(localStorageObject.logged) contextValues.logged = true;
-        contextValues.movies = localStorageObject.boughtMovies;
+        if(localStorageObject?.logged) contextValues.logged = true;
+        contextValues.movies = localStorageObject?.boughtMovies;
         const fetchMovies = async () => {
             try {
                 const response = await fetch('/api/movies');
